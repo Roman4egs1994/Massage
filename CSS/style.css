@@ -1,0 +1,43 @@
+
+* {
+    box-sizing: border-box;
+}
+ 
+:root {
+    
+}
+
+body , html, h1, h2, h3, h4, h5, h6 , p {
+	padding: 0;
+	margin: 0;
+	font-family: 'Rubik', sans-serif;
+	font-size: 16px;
+}
+
+.page {
+    margin: 0 auto;
+}
+
+.page-header {
+    display: flex;
+    min-width: 1880px ;
+    margin: 0px auto;
+    justify-content: space-between;
+    background-color: #fbfbfb;
+    padding: 3em 1.5em 0.5em 6em
+}
+
+.logo {
+    display: flex;
+}
+
+.header-logo {
+    width: 280px;
+}
+
+
+/* @media (min-width: 1440px) and (max-width:1879.98px) {
+
+    .header-logo {
+        width: 100px;
+    } */
