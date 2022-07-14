@@ -1,30 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
     box-sizing: border-box;
 }
  
 :root {
-    
+    --nav-list__anhor: #000000;
 }
 
 body , html, h1, h2, h3, h4, h5, h6 , p {
 	padding: 0;
 	margin: 0;
-	font-family: 'Rubik', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 }
 
 .page {
     margin: 0 auto;
+    min-width: 1880px;
 }
 
 .page-header {
     display: flex;
-    min-width: 1880px ;
+    /* min-width: 1880px ; */
     margin: 0px auto;
     justify-content: space-between;
     background-color: #fbfbfb;
-    padding: 3em 1.5em 0.5em 6em
+    padding: 3em 2em 0.5em 5em
 }
 
 .logo {
@@ -33,6 +35,101 @@ body , html, h1, h2, h3, h4, h5, h6 , p {
 
 .header-logo {
     width: 280px;
+}
+
+.nav-list {
+	display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-end;
+    /* padding: 0 4.5em; */
+    align-content: center;
+}
+
+.nav-list_anhor {
+    margin: 0em 6.5em 0em 0em;
+}
+
+.nav-list .nav-list_anhor {
+    text-decoration: none;
+    color: var(--nav-list__anhor);
+    font-size: 20px ;
+    transition: 400ms;
+}
+
+.nav-list .nav-list_anhor:hover {
+	/* text-shadow: 0px 1px 3px rgb(0, 0, 0);	 */
+    font-weight: 900;
+}
+
+.header-main {
+    /* min-width: 1880px; */
+    display: flex;
+    min-width: 1880px ;
+    margin: 0px auto;
+    justify-content: space-between;
+    background-color: #fbfbfb;;
+    padding: 3em 2em 0.5em 5em;
+}
+
+.left-part {
+    margin-top: 3.5em;
+}
+
+.i-am {
+    color:#FF8A56;
+    margin-top: 1em;
+}
+
+.about-me {
+    font-size: 45px;
+    line-height: 1.3em;
+}
+
+.me-descriprion {
+    font-size: 22px;
+    color:#666666;
+    line-height: 30px;
+    margin-top: 1.5em;
+}
+
+.buttons-menu {
+    display: flex;
+    margin-top: 2.5em;
+}
+
+.book-a-call {
+    height: 55px;
+    width: 190px;
+    background: #000000;
+    cursor: pointer;
+    color:#FFFFFF;
+    font-size: 18px;
+    border-radius: 0px;
+    border: 1px solid #FFFFFF;
+    margin-right:14px;
+    outline: none;
+    transition: 1s ease-in-out;
+}
+.book-a-call {
+    transition: 1s ease-in-out;
+    background: #000000;
+}
+
+.download-cv {
+    height: 55px;
+    width: 190px;
+    background: #fbfbfb;
+    cursor: pointer;
+    color:#000000;
+    font-size: 18px;
+    border:none
+    }
+
+.photo-profile {
+    max-width: 500px;
+    height: auto;
+    margin: 0px 285px 0px 0px;
 }
 
 
