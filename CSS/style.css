@@ -123,11 +123,11 @@ body , html, h1, h2, h3, h4, h5, h6 , p {
 }
 
 .btn {
-    width: 150px;
-    height: 45px;
-    margin:0 10px;
+    height: 55px;
+    width: 190px;
+    background: #ffffff;
+    font-size: 18px;
     border:2px solid darkgrey;
-    background: none;
     cursor:pointer;
     position:relative;
     transition:.3s;
@@ -140,10 +140,10 @@ body , html, h1, h2, h3, h4, h5, h6 , p {
    .btn::before {
     content:"";
     display: block;
-    background: #c0392b;
+    background: #000000;
     position:absolute;
     transition:.3s;
-    z-index:-1;
+    /* z-index:-1; */
    }
    
    .righ::before {
