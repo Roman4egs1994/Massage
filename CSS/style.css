@@ -6,6 +6,11 @@
  
 :root {
     --nav-list__anhor: #000000;
+    --background-light-part: #fbfbfb;
+    --background-dark-part: #000000;
+    --text-strong:#FF8A56;
+    --text-big: #000000;
+    --text-description: #666666;
 }
 
 body , html, h1, h2, h3, h4, h5, h6 , p {
@@ -25,8 +30,8 @@ body , html, h1, h2, h3, h4, h5, h6 , p {
     /* min-width: 1880px ; */
     margin: 0px auto;
     justify-content: space-between;
-    background-color: #fbfbfb;
-    padding: 3em 2em 0.5em 5em
+    background-color: var(--background-light-part);
+    padding: 3em 2em 0.5em 5em;
 }
 
 .logo {
@@ -68,7 +73,7 @@ body , html, h1, h2, h3, h4, h5, h6 , p {
     min-width: 1880px ;
     margin: 0px auto;
     justify-content: space-between;
-    background-color: #fbfbfb;;
+    background-color: var(--background-light-part);
     padding: 3em 2em 0.5em 5em;
 }
 
@@ -77,18 +82,19 @@ body , html, h1, h2, h3, h4, h5, h6 , p {
 }
 
 .i-am {
-    color:#FF8A56;
+    color:var(--text-strong);
     margin-top: 1em;
 }
 
 .about-me {
     font-size: 45px;
     line-height: 1.3em;
+    color:var(--text-big);
 }
 
 .me-descriprion {
     font-size: 22px;
-    color:#666666;
+    color:var(--text-description);
     line-height: 30px;
     margin-top: 1.5em;
 }
