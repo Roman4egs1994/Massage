@@ -122,23 +122,55 @@ body , html, h1, h2, h3, h4, h5, h6 , p {
     background: #000000;
 }
 
-.download-cv {
-    height: 55px;
-    width: 190px;
-    background: #fbfbfb;
-    cursor: pointer;
-    color:#000000;
-    font-size: 18px;
-    border:none
-    }
-
-.photo-profile {
-    max-width: 500px;
-    height: auto;
-    margin: 0px 285px 0px 0px;
-}
-
-
+.btn {
+    width: 150px;
+    height: 45px;
+    margin:0 10px;
+    border:2px solid darkgrey;
+    background: none;
+    cursor:pointer;
+    position:relative;
+    transition:.3s;
+   }
+   
+   .btn:hover {
+    color:#fff;
+   }
+   
+   .btn::before {
+    content:"";
+    display: block;
+    background: #c0392b;
+    position:absolute;
+    transition:.3s;
+    z-index:-1;
+   }
+   
+   .righ::before {
+    width: 0;
+    height: 100%;
+    top:0;
+    left:0;
+   }
+   
+   .righ:hover::before {
+    width: 100%;
+   }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    
 /* @media (min-width: 1440px) and (max-width:1879.98px) {
 
     .header-logo {
