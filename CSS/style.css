@@ -103,22 +103,43 @@ body , html, h1, h2, h3, h4, h5, h6 , p {
     margin-top: 2.5em;
 }
 
-.book-a-call {
+.btn-one {
     height: 55px;
     width: 190px;
     background: #000000;
     cursor: pointer;
+    position: relative;
     color:#FFFFFF;
     font-size: 18px;
     border-radius: 0px;
-    border: 1px solid #FFFFFF;
+    border: 2px solid darkgrey;
     margin-right:14px;
-    outline: none;
-    transition: 1s ease-in-out;
+    transition: .5s;
 }
-.book-a-call {
-    transition: 1s ease-in-out;
-    background: #000000;
+
+.btn-one:hover {
+    color: #000000;
+    z-index:1;
+}
+
+.btn-one::before {
+    content: "";
+    display: block;
+    background:#fff;
+    position: absolute;
+    transition: .5s;
+    z-index: -1;
+}
+
+.book-a-call::before {
+    width: 0;
+    height: 100%;
+    top:0;
+    left:0;
+}
+
+.book-a-call:hover::before {
+    width: 100%;
 }
 
 .btn {
@@ -129,7 +150,7 @@ body , html, h1, h2, h3, h4, h5, h6 , p {
     border:2px solid darkgrey;
     cursor:pointer;
     position:relative;
-    transition:.3s;
+    transition: .5s;
    }
    
    .btn:hover {
@@ -142,7 +163,7 @@ body , html, h1, h2, h3, h4, h5, h6 , p {
     display: block;
     background: #000000;
     position:absolute;
-    transition:.3s;
+    transition: .5s;
     z-index:-1;
    }
    
